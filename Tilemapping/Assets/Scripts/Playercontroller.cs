@@ -32,6 +32,7 @@ public class Playercontroller : MonoBehaviour
         lives = 3;
 
         musicSource.clip = musicClipOne;
+        musicSource.loop = true;
         musicSource.Play();
 
         winText.text = "";
