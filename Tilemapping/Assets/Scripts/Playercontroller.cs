@@ -73,6 +73,11 @@ public class Playercontroller : MonoBehaviour
         {
             Flip();
         } 
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

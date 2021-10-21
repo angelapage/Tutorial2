@@ -17,10 +17,5 @@ public class Cameracontroller : MonoBehaviour
     void LateUpdate()
     {
         this.transform.position = new Vector3(target.transform.position.x, target.transform.position.y, this.transform.position.z);
-         
-         if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
     }
 }
