@@ -74,10 +74,6 @@ public class Playercontroller : MonoBehaviour
             Flip();
         } 
 
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -102,6 +98,7 @@ public class Playercontroller : MonoBehaviour
             winText.text = "You Win! Game made by Angela Page";
             musicSource.clip = musicClipTwo;
             musicSource.Play();
+            musicSource.loop = false;
         }
 
         else if (collision.collider.tag == "Enemy")
